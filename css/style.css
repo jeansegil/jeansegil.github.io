@@ -7,40 +7,12 @@
     box-sizing: border-box;
 }
 
-/* .parrafos-grid{
-    display: grid;
-    padding: 40px;
-    background-color: brown;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-} */
-
-.parrafos-nosotros{
-    display: flex;
-    padding: 40px;
-    background-color: rgb(18, 18, 48);
-    color: white;
-} 
-.parrafos-grid p{
-    width: 50%;
-}
-
-.logo img{
-    width: 20%;
-    height: auto;
-}
-
-.logo-nosotros img{
-    width: 20%;
-    height: auto;
-}
 /* -----------------------------------------header-----------------------------------------*/
 
 header{
     background-color: #12122d;
     padding: 10px;
     margin-top: 0px;
-    /* Experimentando xd' */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -54,7 +26,7 @@ header div nav ul {
     padding: 0px;
     margin-left: 0px;
     list-style: none;
-    display: flex; /* Hace que los elementos <li> se alineen en fila */
+    display: flex;
 }
 
 header div nav ul li{
@@ -70,7 +42,7 @@ header div nav ul li a{
 }
 /* -----------------------------------------body-----------------------------------------*/
 .hero {
-    position: relative; /* Necesario para posicionar el pseudo-elemento correctamente */
+    position: relative;
     width: 100%;
     height: calc(100vh - 103.6px);
     text-align: center;
@@ -114,7 +86,6 @@ header div nav ul li a{
 }
 
 .hero a{
-    /*width: 100%; /* Ajusta el ancho del botón */
     height: 90%; /* Ajusta la altura para que sea igual al ancho */
     border-radius: 60px 60px 60px 60px; /* Hace que el botón sea redondo */
     border: none;    /* Elimina el borde predeterminado del botón */
@@ -125,7 +96,6 @@ header div nav ul li a{
     justify-content: center; /* Centra horizontalmente el contenido */
     align-items: center; /* Centra verticalmente el contenido */
     cursor: pointer; /* Cambia el cursor a una mano cuando pasas sobre el botón */
-    /* box-shadow: 0 10px 10px rgba(255, 255, 255, 0.5); /* Añade sombra para darle profundidad */
     transition: background-color 0.5s; /* Efecto de transición al pasar el cursor */
     text-decoration: none;
     font-weight: bold;
@@ -137,20 +107,6 @@ header div nav ul li a{
 background-color: #6e29f6; /* Cambia de color al pasar el cursor */ 
 color: #ebeff0
 }
-
-/*-
-.hero a{
-    display: flex;
-    background-color: #01f6f7;
-    text-decoration: none;
-    color: #12122d;
-    padding: 15px;
-    margin-left: 3px;
-    margin-right: 3px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 30px;
-}--*/
 
 
 .nuestros_servicios{
@@ -200,18 +156,8 @@ color: #ebeff0
     margin-top: 1px;
 }
 
-/*
-.servicios div a{
-    background-color: black;
-    text-decoration: none;
-    color: white;
-    padding: 3px;
-}
-*/
 
 .servicios div a{
-/*width: 100%; /* Ajusta el ancho del botón */
-/*height: 90%; /* Ajusta la altura para que sea igual al ancho */
 border-radius: 60px 60px 60px 60px; /* Hace que el botón sea redondo */
 border: none;    /* Elimina el borde predeterminado del botón */
 background-color: #01f6f7; /* Color de fondo del botón */
@@ -221,7 +167,6 @@ display: flex center; /* Alinea el contenido al centro */
 justify-content: center; /* Centra horizontalmente el contenido */
 align-items: center; /* Centra verticalmente el contenido */
 cursor: pointer; /* Cambia el cursor a una mano cuando pasas sobre el botón */
-/* box-shadow: 0 10px 10px rgba(255, 255, 255, 0.5); /* Añade sombra para darle profundidad */
 transition: background-color 0.5s; /* Efecto de transición al pasar el cursor */
 text-decoration: none;
 font-weight: bold;
@@ -290,6 +235,74 @@ body{
 }
 
 
+
+/* -----------------------------------------NOSOTROS-----------------------------------------*/
+
+
+.nosotros_resumen{
+    margin: 30px;
+    display: flex;
+    padding: 40px;
+    background-color: rgb(18, 18, 48);
+    color: white;
+
+}
+
+.nosotros_text{
+    margin: 0px;
+    display: flex;
+    padding: 0px;
+    background-color: rgb(18, 18, 48);
+    color: white;
+    background-image: url(../img/home_mkt_digital.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nosotros_mision{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #6e29f6;
+    color: white;
+} 
+
+.nosotros_valores{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    text-align: left;
+    padding: 40px;
+    background-color: #6e29f6;
+    color: white;
+}
+
+.nosotros_text{
+    margin: 30px;
+    display: flex;
+    padding: 40px;
+    background-color: rgb(18, 18, 48);
+    color: white;
+}
+
+.parrafos-grid p{
+    width: 50%;
+}
+
+.logo img{
+    width: 20%;
+    height: auto;
+}
+
+.logo-nosotros img{
+    width: 20%;
+    height: auto;
+}
+
 /* -----------------------------------------footer-----------------------------------------*/
 
 footer{
@@ -327,11 +340,99 @@ footer div img{
 
 }
 
-.list{
-    list-style: none;
+
+
+
+
+
+/* -----------------------------------------FORMULARIO-----------------------------------------*/
+
+
+
+.section_contacto{
+    background-image: url(../img/home_mkt_digital.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
 }
-.list li a{
-    text-decoration: none;
-    list-style: none;
-    color: #ebeff0;
+
+.formulario_contacto{
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+
+}
+
+h1 {
+    font-weight: medium;
+}
+
+.form-group{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+input:focus, textarea:focus {
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+
+button {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #e74c4f;
+}
+
+
+.form_complet{
+background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
 }
