@@ -8,41 +8,78 @@
 </head>
 <body>
     <header>
-        <h1>JEAN PIERRE</h1>
-        <h2>Contacto</h2>
-        <nav>
+        <div class="logo-nosotros">
+            <img src="../img/logo_sinfondo_hor.png" alt="">
+        </div>
+        <div>
+            <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../pages/nosotros.html">Nosotros</a></li>
                 <li><a href="../pages/servicios.html">Servicios</a></li>
                 <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+            </nav>
+        </div>
     </header>
-    <main>
-        <main>
+    <main class="section_contacto">
+        <!----------FORMULARIO----------------->
+        <div class="formulario_contacto">
+            <h1>Déjanos tus datos</h1>
             <form action="" method="" enctype="">
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Escribi tu nombre">
-                </div>
-                <div>
-                    <label for="mail">Correo</label>
-                    <input type="email">
-                </div>
-                <div>
-                    <label for="service">Servicio Interesado</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="cel-phone">Celular</label>
-                    <input type="number">
-                </div>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribi tu nombre" required>
+                    </div>
+                    <div>
+                        <label for="mail">Correo</label>
+                        <input type="email" name="email" id="correo" placeholder="Escribe tu correo electronico" required>
+                    </div>
+                    <div>
+                        <label for="cel-phone">Celular</label>
+                        <input type="number" name="numero" id="numero" placeholder="Escribe tu numero celular" required>
+                    </div>
+                    <div>
+                        <label for="service">Servicio Interesado</label><br>
+                        <select id="service" name="servicios" required>
+                            <option value="social_media">Social Media</option>
+                            <option value="Branding">Branding</option>
+                            <option value="Packaging">Packaging</option>
+                            <option value="pagina_web">Diseño Web</option>
+                        </select>
+                        
+                        <label for="messange">Mensaje</label>
+                        <textarea id="messange" name="messange" rows="4" cols="50" required></textarea>
+                        <!--------------ENVIAR--------------->
+                        <button type="submit" value="Enviar" id="form_complet"> Enviar</button>
+                    </div>
             </form>
-            
-            <section id="ubication-contact">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.879950733585!2d-77.02280018852068!3d-12.120365588072668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c805f9e84fb1%3A0xd71f17569688bc7!2sNerd%20-%20Agencia%20Digital!5e0!3m2!1ses!2spe!4v1721092025462!5m2!1ses!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-        </main>
+        </div> 
+                    <!-------IMAGEN DE FORMULARIO---------->
+<!---
+        <main class="image_mkt">
+            <img src="../img/home_mkt_digital.png" alt="Descripción de la imagen" class="image">
+            <p>Aquí puedes agregar texto sobre el servicio.</p>
+        </main>-->
     </main>
+    <footer>
+        <!----------------Footer------------------------------>
+            <div class="footer-container">
+                <img src="../img/logo_sinfondo_ver.png" alt="">
+            </div>
+                <div class="footer_contacto">
+                    <h4>Contacto</h4>
+                    <p>Correo: Info@lead.agency</p>
+                    <p>Celular: +51 953 030 305</p>
+                </div>
+                <div class="footer_seccion_links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+    </footer>
 </body>
