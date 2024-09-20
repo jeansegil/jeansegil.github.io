@@ -1,0 +1,438 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playwrite+CU:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----------------------------------------header-----------------------------------------*/
+
+header{
+    background-color: #12122d;
+    padding: 10px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    
+}
+
+header div nav ul {
+    padding: 0px;
+    margin-left: 0px;
+    list-style: none;
+    display: flex;
+}
+
+header div nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+header div nav ul li a{
+    text-decoration: none;
+    color: #ebeff0;
+    font-size: 20px;
+    font-weight: medium;
+}
+/* -----------------------------------------body-----------------------------------------*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 103.6px);
+    text-align: center;
+    background-image: url(../img/background1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ebeff0;
+    padding: 10%;
+    padding-left: 25%;
+    padding-right: 25%;
+    z-index: 1; /* Asegura que el contenido esté encima del pseudo-elemento */
+    
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color sólido (negro); ajusta el color y la opacidad según lo necesites */
+    z-index: -1; /* Asegura que la capa sólida esté debajo del contenido pero sobre la imagen */
+}
+
+
+
+
+.hero h1{
+    font-size: 50px;
+    display: inline-block;
+    padding: 15px;
+    color: #ebeff0;
+}
+
+.hero p{
+    font-size: 15px;
+    margin: 20px;
+}
+
+.hero a{
+    height: 90%; /* Ajusta la altura para que sea igual al ancho */
+    border-radius: 60px 60px 60px 60px; /* Hace que el botón sea redondo */
+    border: none;    /* Elimina el borde predeterminado del botón */
+    background-color: #01f6f7; /* Color de fondo del botón */
+    color: #12122d; /* Color del texto o ícono dentro del botón */
+    font-size: 20px; /* Tamaño del texto o ícono */
+    display: flex center; /* Alinea el contenido al centro */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    cursor: pointer; /* Cambia el cursor a una mano cuando pasas sobre el botón */
+    transition: background-color 0.5s; /* Efecto de transición al pasar el cursor */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    
+}
+
+.hero a:hover{
+background-color: #6e29f6; /* Cambia de color al pasar el cursor */ 
+color: #ebeff0
+}
+
+
+.nuestros_servicios{
+    display: flex;
+    border: 0px solid #01f6f7;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    height: 10%;
+    background-color: #12122d;
+    color: #ebeff0;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+.servicios{
+    display: flex;
+    justify-content: center;
+    background-color: #12122d;
+    flex-wrap: wrap;
+
+}
+
+.servicios div{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    border: 2px solid #01f6f7;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px 15px;
+    display: inline-block;
+    background-color: #ebeff0;
+    
+}
+
+.servicios div img{
+    width: 90%;
+    border-radius: 15px 15px 0 0;
+    padding: 5px;
+}
+
+.servicios div h3{
+    margin-top: 1px;
+}
+
+
+.servicios div a{
+border-radius: 60px 60px 60px 60px; /* Hace que el botón sea redondo */
+border: none;    /* Elimina el borde predeterminado del botón */
+background-color: #01f6f7; /* Color de fondo del botón */
+color: #12122d; /* Color del texto o ícono dentro del botón */
+font-size: 20px; /* Tamaño del texto o ícono */
+display: flex center; /* Alinea el contenido al centro */
+justify-content: center; /* Centra horizontalmente el contenido */
+align-items: center; /* Centra verticalmente el contenido */
+cursor: pointer; /* Cambia el cursor a una mano cuando pasas sobre el botón */
+transition: background-color 0.5s; /* Efecto de transición al pasar el cursor */
+text-decoration: none;
+font-weight: bold;
+padding: 12px;
+margin-top: 20px;
+}
+
+.servicios div a:hover{
+    background-color: #6e29f6; /* Cambia de color al pasar el cursor */ 
+    color: #ebeff0
+    }
+
+/* -----------------------------------------body-----------------------------------------*/
+
+body{
+    font-family: "Montserrat", sans-serif;
+    padding-top: 30px;
+    background-color: #12122d;
+}
+
+
+
+
+.idea{
+    
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #6e29f6;
+    color: #ebeff0;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_idea{
+    width: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: solid 0px #01f6f7;
+    font-weight: center;
+    align-items: center;
+}
+
+.text_idea h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.img_idea{
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    margin: 0px;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.img_idea img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/* -----------------------------------------NOSOTROS-----------------------------------------*/
+
+
+.nosotros_resumen{
+    margin: 30px;
+    display: flex;
+    padding: 40px;
+    background-color: rgb(18, 18, 48);
+    color: white;
+
+}
+
+.nosotros_text{
+    margin: 0px;
+    display: flex;
+    padding: 0px;
+    background-color: rgb(18, 18, 48);
+    color: white;
+    background-image: url(../img/home_mkt_digital.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nosotros_mision{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #6e29f6;
+    color: white;
+} 
+
+.nosotros_valores{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    text-align: left;
+    padding: 40px;
+    background-color: #6e29f6;
+    color: white;
+}
+
+.nosotros_text{
+    margin: 30px;
+    display: flex;
+    padding: 40px;
+    background-color: rgb(18, 18, 48);
+    color: white;
+}
+
+.parrafos-grid p{
+    width: 50%;
+}
+
+.logo img{
+    width: 20%;
+    height: auto;
+}
+
+.logo-nosotros img{
+    width: 20%;
+    height: auto;
+}
+
+/* -----------------------------------------footer-----------------------------------------*/
+
+footer{
+    background-color: #12122d;
+    display: flex;
+    flex-wrap: wrap;
+    color: #ebeff0;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer div img{
+    width: 150px;
+    height: 150px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.footer_contacto{
+    margin: 20px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+}
+
+.footer_seccion_links{
+    margin: 20px;
+    color: #ebeff0;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 80px;
+    margin-left: 80px;
+
+}
+
+
+
+
+
+
+/* -----------------------------------------FORMULARIO-----------------------------------------*/
+
+
+
+.section_contacto{
+    background-image: url(../img/home_mkt_digital.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.formulario_contacto{
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+
+}
+
+h1 {
+    font-weight: medium;
+}
+
+.form-group{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+input:focus, textarea:focus {
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+
+button {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #e74c4f;
+}
+
+
+.form_complet{
+background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
